@@ -7,7 +7,33 @@
     "test": "jest",
     "lint": "./node_modules/.bin/eslint index.js index.test.js --fix"
   },
-  "author": "Hussain Ali Akbar",
+  "author": "Hussain Ali Akbar <hussain94aa@gmail.com> (http://hussainaliakbar.github.io)",
+  "contributors": [
+    {
+      "name": "Asjad Saboor",
+      "url": "https://github.com/asjadsaboor"
+    },
+    {
+      "name": "M. Owais kalam",
+      "url": "https://github.com/mowaiskalam"
+    },
+    {
+      "name": "Waqas Kiffal",
+      "url": "https://github.com/wkgalla"
+    }
+  ],
+  "bugs": "https://github.com/HussainAliAkbar/request-trimmer/issues",
+  "homepage": "https://github.com/HussainAliAkbar/request-trimmer",
+  "keywords": [
+    "koa",
+    "middleware",
+    "request",
+    "trimmer"
+  ],
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/HussainAliAkbar/request-trimmer"
+    },
   "license": "MIT",
   "devDependencies": {
     "eslint": "^5.9.0",
