@@ -4,8 +4,7 @@ const trimmer = (opts) => {
     query: false,
     params: false
   };
-  const mergedOptions = {...options, ...opts};
-  console.log(mergedOptions)
+  const mergedOptions = { ...options, ...opts };
   return async (ctx, next) => {
     if (mergedOptions.body && ctx.request.body) {
       ctx.request.body = trim(ctx.request.body);
@@ -17,7 +16,7 @@ const trimmer = (opts) => {
       ctx.params = trim(ctx.params);
     }
     await next();
-  }
+  };
 };
 
 const trim = (obj) => {
@@ -31,6 +30,5 @@ const trim = (obj) => {
   }
   return obj;
 };
-
 
 module.exports = trimmer;

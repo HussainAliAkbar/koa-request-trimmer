@@ -1,0 +1,5 @@
+
+
+describe('candidate service', () => {
+
+}
