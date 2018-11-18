@@ -60,6 +60,8 @@ setting any of the property to true or false will dictate the middleware as to w
 
 [Sample Usage](https://github.com/HussainAliAkbar/koa-request-trimmer/blob/master/sample-usage.js)
 
+## Still to come
+Typescript Typings!
 
 ## Contributors
 
