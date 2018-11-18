@@ -1,6 +1,6 @@
 {
   "name": "koa-request-trimmer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A koa middleware package to trim all incoming requests",
   "main": "index.js",
   "scripts": {
