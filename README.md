@@ -5,7 +5,8 @@
 [license]: https://github.com/HussainAliAkbar/request-trimmer/blob/master/LICENSE
 
 # Koa Request Trimmer
-A koa middleware to trim incoming requests.
+A dependency-free koa middleware to trim incoming requests.
+The middleware is able to trim the request body, URL parameters and query string parameters.
 
 
 ## Installation
@@ -14,6 +15,50 @@ npm i --save koa-request-trimmer
 ```
 
 ## Usage
+
+```js
+const Koa = require('koa');
+// a body parser of your choice
+const trimmer = require('koa-request-trimmer');
+
+
+const app = new Koa();
+
+const options = {
+  body: true,
+  query: true,
+  params: true
+};
+
+// apply bodyparser middleware of your choice
+
+
+app.use(trimmer(options));
+
+```
+
+Passing options to the middleware is optional. You can even use it like this:
+
+```js
+app.use(trimmer());
+```
+
+If you do not provide any options then by default, the middleware will only trim the request body.
+
+To trim other things like query string parameters and URL parameters, the options object needs to be passed to the middleware:
+
+```js
+const options = {
+  body: true,
+  query: true,
+  params: true
+};
+```
+
+setting any of the property to true or false will dictate the middleware as to what to trim and what not.
+
+
+[Sample Usage](https://github.com/HussainAliAkbar/koa-request-trimmer/blob/master/sample-usage.js)
 
 
 ## Contributors
