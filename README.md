@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/HussainAliAkbar/request-trimmer.svg?branch=master)](https://travis-ci.com/HussainAliAkbar/request-trimmer)
+[![Build Status](https://travis-ci.com/HussainAliAkbar/koa-request-trimmer.svg?branch=master)](https://travis-ci.com/HussainAliAkbar/koa-request-trimmer)
 [![MIT License][license-badge]][LICENSE]
 
 [license-badge]: https://img.shields.io/badge/License-MIT-yellow.svg
