@@ -63,12 +63,12 @@ setting any of the property to true or false will dictate the middleware as to w
 
 ### Using with Typescript
 
-You can import the module and the options interface in this way:
+You can import the module in this way:
 ```ts
 import { koaRequestTrimmer as trimmer } from 'koa-request-trimmer';
 ```
 
-and then pass it on to the Koa App:
+and then pass it on to the Koa App with optional parameters:
 
 ```ts
 app.use(trimmer())
