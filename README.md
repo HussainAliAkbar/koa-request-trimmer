@@ -5,7 +5,8 @@
 [license]: https://github.com/HussainAliAkbar/request-trimmer/blob/master/LICENSE
 
 # Koa Request Trimmer
-A dependency-free koa middleware to trim incoming requests.
+A dependency-free koa middleware to trim incoming requests - complete with **Typescript Typings!**
+
 The middleware is able to trim the request body, URL parameters and query string parameters.
 
 
@@ -60,8 +61,19 @@ setting any of the property to true or false will dictate the middleware as to w
 
 [Sample Usage](https://github.com/HussainAliAkbar/koa-request-trimmer/blob/master/sample-usage.js)
 
-## Still to come
-Typescript Typings!
+### Using with Typescript
+
+You can import the module and the options interface in this way:
+```ts
+import { koaRequestTrimmer as trimmer } from 'koa-request-trimmer';
+```
+
+and then pass it on to the Koa App:
+
+```ts
+app.use(trimmer())
+```
+ 
 
 ## Contributors
 
